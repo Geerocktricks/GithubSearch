@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <!-- <img src="../assets/kiss4.png" alt="git-image" class="col-md-6"> -->
+    <form (ngSubmit)="submitUser(name)" #userForm="ngForm" class="col-md-6 form" >
+      <div class="form-group">
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="inputtext" id="input" placeholder="Github username..." 
+          [(ngModel)]="newSearch.name" name="name" (keyup)= "submitUser(name)" #name='ngModel'>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
